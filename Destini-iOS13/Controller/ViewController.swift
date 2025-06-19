@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        storyLabel.text = "i see a frog"
+        choice1Button.setTitle("yes i see", for: .normal)
+        choice2Button.setTitle("i not see a frog", for: .normal)
 
     }
 
