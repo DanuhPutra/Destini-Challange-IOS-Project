@@ -7,14 +7,6 @@
 //
 
 import Foundation
-struct Story{
-    let title : String
-    let choiceOne : String
-    let choiceTwo : String
-}
 
-let stories = [
-    Story(title: "You see a frog in the road", choiceOne: "Take a left", choiceTwo: "Take a right"),
-    Story(title: "You see a tiger", choiceOne: "shout a help", choiceTwo: "Play dead"),
-    Story(title: "You find a treasure chest", choiceOne: "Open it", choiceTwo: "Check for traps")
-]
+
+
