@@ -14,14 +14,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    var storyNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyLabel.text = "i see a frog"
-        choice1Button.setTitle("yes i see", for: .normal)
-        choice2Button.setTitle("i not see a frog", for: .normal)
+        updateUI()
+        
 
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if sender.currentTitle == stories[storyNumber].choiceOne{ storyNumber = 1 }
+        if sender.currentTitle == stories[storyNumber].choiceTwo{ storyNumber = 2 }
+        updateUI()
+    }
+    
+    func updateUI(){
+        storyLabel.text = stories[storyNumber].title
+        choice1Button.setTitle(stories[storyNumber].choiceOne, for: .normal)
+        choice2Button.setTitle(stories[storyNumber].choiceTwo, for: .normal)
+    }
+    
 }
 
