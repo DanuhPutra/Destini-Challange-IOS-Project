@@ -8,5 +8,11 @@
 
 import Foundation
 
-
+struct Story{
+    let title : String
+    let choiceOne : String
+    let choiceOneDestination : Int
+    let choiceTwo : String
+    let choiceTwoDestination : Int
+}
 
