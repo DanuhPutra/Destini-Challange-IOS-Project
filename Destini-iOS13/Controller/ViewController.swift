@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        
-
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -32,7 +30,5 @@ class ViewController: UIViewController {
         choice1Button.setTitle(storyBrain.getChoiceOne(), for: .normal)
         choice2Button.setTitle(storyBrain.getChoiceTwo(), for: .normal)
     }
-    
-
 }
 
